@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:property_name",
+ "creation": "2024-07-10 13:14:06.157232",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_eh3m",
+  "property_name",
+  "address",
+  "column_break_safw",
+  "property_type",
+  "status",
+  "section_break_kgs9",
+  "image",
+  "agent",
+  "section_break_kun3",
+  "description",
+  "section_break_15iu",
+  "amenity",
+  "grand_total",
+  "property_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_eh3m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_safw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Link",
+   "label": "Property type",
+   "options": "property type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "SALE\nRENT\nLEASE"
+  },
+  {
+   "fieldname": "section_break_kgs9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "Agent"
+  },
+  {
+   "fieldname": "section_break_kun3",
+   "fieldtype": "Section Break",
+   "label": "description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_15iu",
+   "fieldtype": "Section Break",
+   "label": "Amenities"
+  },
+  {
+   "fieldname": "amenity",
+   "fieldtype": "Table",
+   "label": "Amenity",
+   "options": "Property amenity detail"
+  },
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property Name ",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "grand total"
+  },
+  {
+   "fieldname": "property_price",
+   "fieldtype": "Currency",
+   "label": "property_price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-17 12:51:31.062761",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "property",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

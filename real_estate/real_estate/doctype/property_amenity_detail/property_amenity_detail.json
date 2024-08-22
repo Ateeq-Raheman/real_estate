@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-10 15:44:10.904917",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "amenity_name",
+  "amenity_price",
+  "amenity_discount"
+ ],
+ "fields": [
+  {
+   "fieldname": "amenity_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Amenity Name",
+   "options": "Property Amenity Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "amenity_name.amenity_price",
+   "fieldname": "amenity_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amenity price",
+   "options": "Property Amenity Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "amenity_name.discount",
+   "fieldname": "amenity_discount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amenity Discount",
+   "options": "Property Amenity Item",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-16 15:33:41.651531",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "Property amenity detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
