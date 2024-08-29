@@ -1,31 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-07-29 10:27:10.212189",
+ "autoname": "field:title",
+ "creation": "2024-08-27 12:44:53.610742",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "dscsc_column",
-  "cdsc"
+  "title"
  ],
  "fields": [
   {
-   "fieldname": "dscsc_column",
-   "fieldtype": "Column Break",
-   "label": "dscsc"
-  },
-  {
-   "fieldname": "cdsc",
+   "fieldname": "title",
    "fieldtype": "Data",
-   "label": "cdsc"
+   "label": "Title",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-29 10:29:25.760524",
+ "modified": "2024-08-28 12:49:44.201999",
  "modified_by": "Administrator",
  "module": "Real Estate",
- "name": "jazeera",
+ "name": "City",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -41,6 +38,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

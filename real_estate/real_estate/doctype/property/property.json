@@ -2,30 +2,41 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:property_name",
- "creation": "2024-07-10 13:14:06.157232",
+ "creation": "2024-08-28 16:43:15.746767",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_eh3m",
   "property_name",
   "address",
-  "column_break_safw",
+  "city",
   "property_type",
-  "status",
-  "section_break_kgs9",
+  "property_price",
+  "discount",
+  "column_break_safw",
   "image",
   "agent",
+  "agent_name",
+  "status",
   "section_break_kun3",
   "description",
   "section_break_15iu",
   "amenity",
-  "grand_total",
-  "property_price"
+  "pricing_section",
+  "grand_total"
  ],
  "fields": [
   {
    "fieldname": "section_break_eh3m",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Property Name ",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "address",
@@ -35,8 +46,10 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_safw",
-   "fieldtype": "Column Break"
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "City"
   },
   {
    "fieldname": "property_type",
@@ -45,14 +58,18 @@
    "options": "property type"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "status",
-   "options": "SALE\nRENT\nLEASE"
+   "fieldname": "property_price",
+   "fieldtype": "Currency",
+   "label": "property_price"
   },
   {
-   "fieldname": "section_break_kgs9",
-   "fieldtype": "Section Break"
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "column_break_safw",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "image",
@@ -67,9 +84,22 @@
    "options": "Agent"
   },
   {
+   "fetch_from": "agent.agent_name",
+   "fieldname": "agent_name",
+   "fieldtype": "Link",
+   "label": "Agent Name",
+   "options": "Agent"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "SALE\nRENT\nLEASE"
+  },
+  {
    "fieldname": "section_break_kun3",
    "fieldtype": "Section Break",
-   "label": "description"
+   "label": "Description"
   },
   {
    "fieldname": "description",
@@ -89,27 +119,19 @@
    "options": "Property amenity detail"
   },
   {
-   "fieldname": "property_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Property Name ",
-   "reqd": 1,
-   "unique": 1
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
   },
   {
    "fieldname": "grand_total",
    "fieldtype": "Currency",
-   "label": "grand total"
-  },
-  {
-   "fieldname": "property_price",
-   "fieldtype": "Currency",
-   "label": "property_price"
+   "label": "Grand Total"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-17 12:51:31.062761",
+ "modified": "2024-08-28 16:43:15.746767",
  "modified_by": "Administrator",
  "module": "Real Estate",
  "name": "property",

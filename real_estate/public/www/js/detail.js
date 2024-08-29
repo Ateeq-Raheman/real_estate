@@ -1,6 +1,6 @@
-document.querySelector("#contact-agent").addEventListener("click",
+document.querySelector("#agent_button").addEventListener("click",
     (e) => {
-        console.log("ehdiuwdeiuhwdwd");
+        console.log("starting of the detail.js");
 
         let agent_email = document.querySelector("#email").value;
         let property_name = document.querySelector("#property-name").textContent;
@@ -26,13 +26,15 @@ document.querySelector("#contact-agent").addEventListener("click",
             primary_action_label: 'Submit',
             primary_action(values) {
                 console.log(values);
+                console.log("Hi before the frappe call");
                 // api call whitelist method
                 frappe.call({
                     method: "real_estate.api.contact_agent", //dotted path to server method
                     args: values,
                     callback: function (r) {
                         // code snippet
-                        console.log('hiiiiiiiiiiiiiiiii')
+                        console.log(r)
+                        console.log("HI FROM the frappe call of DETAIL.JS")
 
                     }
                 })
@@ -43,3 +45,5 @@ document.querySelector("#contact-agent").addEventListener("click",
         d.show();
 
     })
+
+// document.querySelector("#agent_button").addEventListener("click", () => console.log("clicked"))

@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testjazeera(FrappeTestCase):
+class TestCity(FrappeTestCase):
 	pass

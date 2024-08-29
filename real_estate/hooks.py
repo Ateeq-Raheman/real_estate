@@ -1,4 +1,6 @@
+from __future__ import unicode_literals
 from real_estate.www.route import routes 
+from real_estate.www.jinja import jenvs
 app_name = "real_estate"
 app_title = "Real Estate"
 app_publisher = "ateeq\'"
@@ -51,6 +53,7 @@ app_license = "mit"
 # }
 
 website_route_rules = routes
+jinja = jenvs
 # Generators
 # ----------
 
