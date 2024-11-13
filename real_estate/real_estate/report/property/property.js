@@ -6,7 +6,8 @@ frappe.query_reports["property"] = {
 		{
 			"fieldname": "propert_name",
 			"label": ("Property name"),
-			"fieldtype": "Data",
+			"fieldtype": "Link",
+			"options": "property",
 			"Width": 100,
 			"reqd": 0
 		},

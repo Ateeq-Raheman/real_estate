@@ -1,22 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:amenity",
+ "autoname": "field:amenity_name",
  "creation": "2024-07-10 15:48:44.408239",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "amenity",
+  "amenity_name",
   "amenity_price",
-  "discount"
+  "amenity_discount"
  ],
  "fields": [
-  {
-   "fieldname": "amenity",
-   "fieldtype": "Data",
-   "label": "Amenity",
-   "unique": 1
-  },
   {
    "fieldname": "amenity_price",
    "fieldtype": "Data",
@@ -24,7 +18,13 @@
    "unique": 1
   },
   {
-   "fieldname": "discount",
+   "fieldname": "amenity_name",
+   "fieldtype": "Data",
+   "label": "Amenity",
+   "unique": 1
+  },
+  {
+   "fieldname": "amenity_discount",
    "fieldtype": "Data",
    "label": "Discount",
    "unique": 1
@@ -32,7 +32,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-16 11:50:40.080496",
+ "modified": "2024-08-29 17:31:54.509228",
  "modified_by": "Administrator",
  "module": "Real Estate",
  "name": "Property Amenity Item",

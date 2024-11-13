@@ -1,22 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:property_name",
+ "autoname": "format:{####}",
  "creation": "2024-08-28 16:43:15.746767",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_eh3m",
   "property_name",
-  "address",
   "city",
   "property_type",
   "property_price",
   "discount",
+  "address",
   "column_break_safw",
+  "section_break_tjhk",
+  "map",
+  "section_break_eh3m",
   "image",
   "agent",
-  "agent_name",
   "status",
   "section_break_kun3",
   "description",
@@ -84,13 +85,6 @@
    "options": "Agent"
   },
   {
-   "fetch_from": "agent.agent_name",
-   "fieldname": "agent_name",
-   "fieldtype": "Link",
-   "label": "Agent Name",
-   "options": "Agent"
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "status",
@@ -127,15 +121,24 @@
    "fieldname": "grand_total",
    "fieldtype": "Currency",
    "label": "Grand Total"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "Map"
+  },
+  {
+   "fieldname": "section_break_tjhk",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-28 16:43:15.746767",
+ "modified": "2024-09-07 16:49:47.046570",
  "modified_by": "Administrator",
  "module": "Real Estate",
  "name": "property",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

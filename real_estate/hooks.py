@@ -14,7 +14,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/real_estate/css/real_estate.css"
-# app_include_js = "/assets/real_estate/js/real_estate.js"
+app_include_js = "/assets/real_estate/js/desk.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/real_estate/css/real_estate.css"
@@ -120,7 +120,7 @@ jinja = jenvs
 # Override standard doctype classes
 
 # override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"ToDo": "real_estate.overrides.sales_invoice.SalesInvoice"
 # }
 
 # Document Events

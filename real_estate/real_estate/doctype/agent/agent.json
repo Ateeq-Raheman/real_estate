@@ -1,25 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:agent_name",
  "creation": "2024-07-10 13:33:18.173341",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "email"
+  "agent_name",
+  "email",
+  "phone",
+  "image"
  ],
  "fields": [
   {
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "phone"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name ",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-27 13:53:57.233119",
+ "modified": "2024-09-06 11:36:09.492478",
  "modified_by": "Administrator",
  "module": "Real Estate",
  "name": "Agent",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
